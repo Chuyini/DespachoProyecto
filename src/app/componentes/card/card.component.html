@@ -1,0 +1,19 @@
+<div [ngClass]="{'card': !lawyer.isSelected, 'big': lawyer.isSelected}" (click)="select()">
+  <div [ngClass]="{'card-header':!lawyer.isSelected,'card-header-select':lawyer.isSelected}">
+    {{ lawyer.name }}
+   
+  </div>
+  <button [ngClass]="{'quitar':!lawyer.isSelected}" (click)="close($event)">X</button>
+  <!--<img src="{{lawyer.image}}">--> 
+  <img src="{{lawyer.image}}" [ngClass]="{'responsive-image': !lawyer.isSelected, 'responsive-image-selected': lawyer.isSelected}">
+  <div  [ngClass]="{'card-body': !lawyer.isSelected, 'card-body-selected': lawyer.isSelected}">
+
+    
+
+    <h5 class="card-title">{{ lawyer.specialty }}</h5>
+    <p class="card-text">{{ lawyer.description }}</p>
+    <p class="card-text">Precio por hora: {{ lawyer.hourlyRate}} USD</p>
+    <p [ngClass]="{'quitar':!lawyer.isSelected, 'card-text':lawyer.isSelected}">Telefono: {{ lawyer.phone }} </p>
+    <!-- Aquí puedes agregar más detalles, como logros y habilidades -->
+  </div>
+</div>

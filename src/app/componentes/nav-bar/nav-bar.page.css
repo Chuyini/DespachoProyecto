@@ -24,3 +24,30 @@ nav {
     text-decoration: underline;
   }
   
+  .act{
+
+    color: blue;
+  }
+
+.appearLeft{
+
+  float: left;
+
+}
+
+.appearLeftA{
+  float: left;
+  margin-left: 200px;
+
+}
+.appearRight{
+
+  float: right;
+  
+
+}
+
+.dontAppear{
+
+  display: none;
+}

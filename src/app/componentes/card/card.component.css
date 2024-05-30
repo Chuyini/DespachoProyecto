@@ -1,0 +1,109 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: burlywood;
+  text-align: center;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px;
+  transition: all 0.3s ease-in-out; /* Transición suave */
+  cursor: pointer; /* Indica que la tarjeta es seleccionable */
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.card-header-select {
+  font-weight: bold;
+  font-size: 1.7em;
+  position: fixed;
+  left: 35%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: inline;
+  gap: 8px;
+}
+.card-title {
+  margin: 0;
+  font-size: 1em;
+  display: inline;
+}
+
+.card-text {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.big {
+  position: fixed;
+  display: block;
+  justify-content: left;
+  padding-left: 0%;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 600px;
+  background-color: rgba(222, 184, 135, 0.9);
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.quitar{
+  display: none;
+}
+
+button{
+
+  position: absolute;
+  float: right;
+  right: 0px;
+  
+ 
+  width: 100px;
+  height: 50px;
+}
+.responsive-image {
+  width: 200px;
+  /* Ajusta este valor según tus necesidades */
+  height: auto; /* Mantiene la relación de aspecto */
+  display: inline-block; /* Asegura que el margen y el centrado funcionen correctamente */
+  margin: 0 auto; /* Opcional: centra la imagen horizontalmente */
+}
+
+.responsive-image-selected{
+  width: 300px;
+  /* Ajusta este valor según tus necesidades */
+  height: 300px; /* Mantiene la relación de aspecto */
+  display: block; /* Asegura que el margen y el centrado funcionen correctamente */
+  margin: 0 auto; /* Opcional: centra la imagen horizontalmente */
+  
+
+  margin-top: 100px;
+  margin-bottom: 50px;
+  top: 100px;
+
+  left: 100px;
+
+}
+
+.card-body-selected{
+
+  
+  flex-direction: column;
+  justify-content: center;
+  
+  bottom: 10px;
+
+}

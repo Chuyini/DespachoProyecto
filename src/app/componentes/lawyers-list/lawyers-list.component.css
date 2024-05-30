@@ -1,0 +1,7 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centrar horizontalmente */
+    padding: 16px; /* Espacio alrededor de las tarjetas */
+  }

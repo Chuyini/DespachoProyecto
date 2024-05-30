@@ -1,8 +1,14 @@
 <nav>
     <ul>
-      <li><a routerLink="/">Inicio</a></li>
-      <li><a routerLink="/about">Acerca de</a></li>
-      <li><a routerLink="/contact">Contacto</a></li>
+      <li [ngClass]="{'dontAppear': !isAuthenticated, 'appearLeft': isAuthenticated}"><a routerLink="./home/" routerLinkActive="act">Inicio</a></li>
+      <li><a routerLink="./about/" routerLinkActive="act">Acerca de</a></li>
+      <li><a routerLink="./contact/" routerLinkActive="act">Contacto</a></li>
+    
+      <li [ngClass]="{'dontAppear': !isAdmin, 'appearLeftA': isAdmin}"><a routerLink="./administration/" routerLinkActive="act">Administración</a> </li>
+      <li [ngClass]="{'dontAppear': !isAdmin, 'appearLeft': isAdmin}"><a routerLink="./users/" routerLinkActive="act">Usuarios</a></li> 
+      <li [ngClass]="{'dontAppear': isAuthenticated, 'appearRight': !isAuthenticated}"><a routerLink="./register/" routerLinkActive="act">Registrar</a></li>
+      <li [ngClass]="{'dontAppear': isAuthenticated, 'appearRight': !isAuthenticated}"><a routerLink="./login/" routerLinkActive="act">Login</a></li>
+      <li [ngClass]="{'dontAppear': !isAuthenticated, 'appearRight': isAuthenticated}" (click)="logOut()"><a routerLink="./login/" routerLinkActive="act">logOut</a></li>
     </ul>
   </nav>
   
