@@ -11,7 +11,6 @@ import { NgClass } from '@angular/common';
 })
 export class CardComponent {
 
-
   @Input() public lawyer: lawyer ={
     "name": " Eddy",
     "specialty": "Laboral",
@@ -23,19 +22,15 @@ export class CardComponent {
   };
 
   public select():void{
-
     this.lawyer.isSelected=true;
-
   }
+
   public UnSelect():void{
-
     this.lawyer.isSelected=false;
-
   }
+  
   close(event: Event) {
     event.stopPropagation(); // Evita que el evento de clic se propague al contenedor
     this.lawyer.isSelected = false;
-  }
-
- 
+  } 
 }
